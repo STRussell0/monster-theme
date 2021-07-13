@@ -14,31 +14,38 @@
 
 .nav-cell {
   grid-area: nav;
+  border-radius: 0.5rem;
   background-color: blue;
 }
 
 .hero-cell {
   grid-area: hero;
+  border-radius: 0.5rem;
   background-color: cornflowerblue;
 }
 
 .left-side-cell {
   grid-area: lcell;
+  border-radius: 0.5rem;
   background-color: blueviolet;
 }
 
 .main-content-cell {
   grid-area: content;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
   background-color: brown;
 }
 
 .right-side-cell {
   grid-area: rcell;
+  border-radius: 0.5rem;
   background-color: chocolate;
 }
 
 .footer-cell {
   grid-area: footer;
+  border-radius: 0.5rem;
   background-color: darkgreen;
 }
 

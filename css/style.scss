@@ -1,13 +1,15 @@
 @use 'src/grid-templates';
 
-* {
+*
+{
 	margin: 0;
 	padding: 0;
 	font-size: 30px;
 }
 
 
-.grid-container {
+.grid-container
+{
 	display: grid;
 
 	grid-template-columns: .25fr repeat(11, 1fr);
@@ -20,34 +22,53 @@
 		grid-templates.$desktop;
 }
 
-.nav-cell {
+.nav-cell 
+{
 	grid-area: nav;
 
+
+	border-radius: .5rem;
 
 	background-color: blue;
 }
 
-.hero-cell {
+.hero-cell
+{
 	grid-area: hero;
 
+
+	border-radius: .5rem;
 
 	background-color: cornflowerblue;
 }
 
-.left-side-cell {
+.left-side-cell
+{
 	grid-area: lcell;
+
+
+	border-radius: .5rem;
 
 	background-color: blueviolet;
 }
 
-.main-content-cell {
+.main-content-cell
+{
 	grid-area: content;
+
+
+	padding: .5rem;
+	border-radius: .5rem;
 
 	background-color: brown;
 }
 
-.right-side-cell {
+.right-side-cell
+{
 	grid-area: rcell;
+
+
+	border-radius: .5rem;
 
 	background-color: chocolate;
 }
@@ -56,6 +77,8 @@
 {
 	grid-area: footer;
 
+
+	border-radius: .5rem;
 
 	background-color: darkgreen;
 }
