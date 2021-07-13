@@ -12,8 +12,17 @@
 {
 	display: grid;
 
+	// From left to right, columns in fractional  sizes. 
+	// 1/4 fraction to start.
+	// 11 remaining fractions thereafter
 	grid-template-columns: .25fr repeat(11, 1fr);
 
+	// From top to bottom, 
+	// 100px for the nav bar
+	// 87vh for the hero
+	// 100px for a dividing row
+	// auto for the content section
+	// 200px for the footer
 	grid-template-rows: 100px 87vh 100px auto 200px;
 
 	gap: 5px;
