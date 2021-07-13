@@ -1,6 +1,45 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 30px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.25fr repeat(11, 1fr);
+  grid-template-rows: 100px 87vh 100px auto 200px;
+  gap: 5px;
+  grid-template-areas: "nav nav nav nav nav nav nav nav nav nav nav nav" ". lcell lcell hero hero hero hero hero hero hero hero rcell" ". lcell lcell . . . . . . . . rcell" ". lcell lcell content content content content content content content content rcell" "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+.nav-cell {
+  grid-area: nav;
+  background-color: blue;
+}
+
+.hero-cell {
+  grid-area: hero;
+  background-color: cornflowerblue;
+}
+
+.left-side-cell {
+  grid-area: lcell;
+  background-color: blueviolet;
+}
+
+.main-content-cell {
+  grid-area: content;
+  background-color: brown;
+}
+
+.right-side-cell {
+  grid-area: rcell;
+  background-color: chocolate;
+}
+
+.footer-cell {
+  grid-area: footer;
+  background-color: darkgreen;
 }
 
 /*# sourceMappingURL=style.css.map */
